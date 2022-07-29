@@ -1,0 +1,151 @@
+/* General Stlying */
+
+body{
+    background-color: hsl(0, 0%, 95%);
+    font-size: 15px;
+    font-family: 'Lexend Deca', sans-serif;
+ 
+}
+
+p{
+    color: hsla(0, 0%, 100%, 0.75);
+    padding: 3%;
+   
+   
+}
+
+main{
+    height: 600px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+
+h2{
+    font-family: 'Big Shoulders Display', cursive;
+    color:  hsl(0, 0%, 95%);
+    font-size: 1 rem;
+}
+
+
+main .card{
+    width: 20%;
+    height: auto;
+    padding: 2.5%;
+
+}
+
+
+/* Sedan card styling  */
+.sedans{
+    background-color:hsl(31, 77%, 52%) ;
+    
+}
+
+/* SUVs card styling  */
+
+.SUVs{
+    background-color:hsl(184, 100%, 22%) ;
+ 
+}
+
+/* Luxury crad styling */
+
+.luxury{
+    background-color: hsl(179, 100%, 13%);
+}
+
+
+
+/* Button styling */
+
+button{
+    padding: 2%;
+    color:hsl(0, 0%, 95%);
+    background-color: transparent;
+    border-radius: 20px;
+    width: 50%;
+    border-color: hsl(0, 0%, 95%);
+}
+
+.sedan-btn:hover{
+    background-color: hsl(0, 0%, 95%);
+    color: hsl(31, 77%, 52%);
+}
+
+.SUV-btn:hover{
+    background-color: hsl(0, 0%, 95%);
+    color: hsl(184, 100%, 22%);
+}
+
+.luxury-btn:hover{
+    background-color: hsl(0, 0%, 95%);
+    color: hsl(179, 100%, 13%);
+}
+
+
+
+/* *****************Grid html Styling **************************/
+.orange-box { grid-area: first; }
+.yellow-box { grid-area: second; }
+.green-box { grid-area: third; }
+.blue-one { grid-area: fourth; }
+.blue-two { grid-area: fifth; }
+
+
+.colors{
+    background-color: rgb(141, 173, 201);
+    height: auto;
+    display: grid;
+    grid-template-areas: 
+    "first first first second"
+    "third third fourth fourth"
+    "third third fifth fifth"
+    ;
+    gap: 10px;
+    
+    justify-content: center;
+    align-items: center;
+}
+
+.orange-box{
+        width: 600px;
+        height: 300px;
+        background-color: orange;
+        grid-area: first;
+    
+}
+
+.yellow-box{
+    height: 300px;
+    width: 300px;
+    background-color: yellow;
+    grid-area: second;
+}
+
+.green-box{
+    width: 450px;
+    height: 300px;
+    background-color: green;
+    grid-area: third;
+    
+}
+
+.blue-one{
+    width: 450px;
+    height: 145px;
+    background-color: aquamarine;
+    grid-area: fourth;
+   
+}
+
+.blue-two{
+    width: 450px;
+    height: 145px;
+    background-color: aquamarine;
+    grid-area: fifth;
+  
+
+}
